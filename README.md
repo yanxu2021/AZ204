@@ -11,3 +11,12 @@
 - Implement Azure security (20-25%)
 - Monitor, troubleshoot, and optimize Azure solutions (15-20%)
 - Connect to and consume Azure services and third-party services (15-20%)
+
+### Learning path
+- 1. Create serverless applications(10 Modules)
+- 2. Connect your services together(5 Modules)
+- 3. Store data in Azure(5 Modules)
+- 4. Deploy a website with Azure virtual machines(4 Modules)
+- 5. Manage resources in Azure(6 Modules)
+- 6. Deploy a website to Azure with Azure App Service(6 Modules)
+- 7. Secure your cloud data(7 Modules)
