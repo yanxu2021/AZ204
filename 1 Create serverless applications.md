@@ -11,3 +11,15 @@
 ## 1.3 Execute an Azure Function with triggers
 
 ## 1.4 Chain Azure functions together using input and output bindings
+
+## 1.5 Create a long-running serverless workflow with Durable Functions
+
+## 1.6 Develop,test,and publish Azure Functions by using Azure Functions Core Tools
+
+## 1.7 Develop,test,and deploy an Azure Function with Visual Studio
+
+## 1.8 Monitor GitHub events by using a webhook with Azure Functions
+
+## 1.9 Enable automatic updates in a web application using Azure Functions and SignalR Service
+
+## 1.10 Expose multiple Azure Function apps as a consistent API by using Azure API Management
