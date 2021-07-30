@@ -43,7 +43,7 @@ The advert review process should be managed by members of the creative team, bec
 The feedback collection process calls an on-premises SharePoint server. Because this server is not as reliable as a cloud-based server would be, developers want to carefully control the way the workflow retries this connection, if there is a failure.
 
 - **Scenario 2 - Camera Company Merger**
-- 
+
 You work for a company that makes digital cameras. The company has recently acquired a smaller company that makes lenses. You want to ensure that the same procedures are in use throughout the company for the following processes:
 
 Lens quality control. The company you acquired has a good reputation for lens reliability because of its quality control procedure. You want to implement this procedure across the merged company and integrate it with your parts ordering system, which includes a REST API.
