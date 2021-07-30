@@ -10,33 +10,26 @@ Microsoft Azure provides several different ways to host and execute code or work
 
 ### 1.1 Identify the technology options
 - Common business issues
-
+```
 Some business processes are simple, but often they include challenges such as:
-
 They might involve many different steps, sometimes with loops or conditional branches.
-
 They may be long-running and complete over days or weeks as staff become available or because of other delays.
-
 They may involve several different systems such as databases, web services, email servers, and other components.
-
 You may want to integrate a custom or third-party system, which may require a custom connector.
-
 You may want non-developers to be able to modify and update the workflow.
-
+```
 - Design-first technologies
 - Code-first technologies
 ### 1.2 Analyze the decision criteria
 - How to choose a service
-
+```
 Azure includes the following technologies that you can use to overcome these challenges:
-
 1. Microsoft Power Automate
 2. Azure Logic Apps
 3. Azure Functions
 4. Azure App Service WebJobs
-
 Your choice of technology depends on whether you prefer a design-first or a code-first approach, and whether you have skilled developers to work on the project.
-
+```
 - Choosing a design-first technology
 - Choosing a code-first technology
 - Mixing Technologies
