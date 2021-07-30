@@ -44,6 +44,5 @@ Azure Backup is a backup as a service offering that protects physical or virtual
   The template can then be used to easily re-create multiple versions of your infrastructure, such as staging and production.
   ```
 ## 2. Create a Linux virtual machine in Azure
-
 ## 3. Create a Windows virtual machine in Azure
 ## 4. Build and run a web application with the MEAN stack on an Azure Linux virtual machine
