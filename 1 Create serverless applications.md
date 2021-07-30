@@ -4,7 +4,10 @@
 - 10 Modules
 
 ## 1.1 Choose the best Aure service to automate your business processes
--Microsoft Azure provides several different ways to host and execute code or workflows without using Virtual Machines (VMs) including Azure Functions, Microsoft Power Automate, Azure Logic Apps, and Azure WebJobs. 
+Microsoft Azure provides several different ways to host and execute code or workflows without using Virtual Machines (VMs) including Azure Functions, Microsoft Power Automate, Azure Logic Apps, and Azure WebJobs. 
+Identify the technology options
+ 
+
 
 ## 1.2 Create serverless logic with Azure Functions
 
