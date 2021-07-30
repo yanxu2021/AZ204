@@ -28,6 +28,7 @@ Microsoft Azure provides several different ways to host and execute code or work
 - Azure Functions or Azure Apps Service WebJobs?
 ### 1.5 Knowledge check
 - **Scenario 1 - TV Adverts**
+
 You work for a company that makes TV adverts. You want to formalize two business processes:
 
 The advert review process. A completed advert is put through this editorial process to ensure that it meets the standards of taste, decency, grammar, style, and legal requirements in the jurisdiction where it will be broadcast.
@@ -36,16 +37,38 @@ The advert review process should be managed by members of the creative team, bec
 
 The feedback collection process calls an on-premises SharePoint server. Because this server is not as reliable as a cloud-based server would be, developers want to carefully control the way the workflow retries this connection, if there is a failure.
 
-Scenario 2 - Camera Company Merger
+- **Scenario 2 - Camera Company Merger**
 You work for a company that makes digital cameras. The company has recently acquired a smaller company that makes lenses. You want to ensure that the same procedures are in use throughout the company for the following processes:
 
 Lens quality control. The company you acquired has a good reputation for lens reliability because of its quality control procedure. You want to implement this procedure across the merged company and integrate it with your parts ordering system, which includes a REST API.
 Ordering and dispatch. The company you acquired had no formal order and dispatch procedure, so you want to ensure its employees use your original business procedure. The ordering system has a user interface that is built as an Azure App service web app but you want to manage the order and dispatch workflow as a separate project.
 You have hired a small team of developers to do the work and you prefer a design-first approach.
 
+- **Check your Knowledge**
 
- 
+1. In the television advert company, which technology would you use for the advert review process?
 
+**Microsoft Power Automate** 
+
+Implement the workflow using Microsoft Power Automate because this allows the creative team, who are not developers, to manage the flow.
+
+2. In the television advert company, which technology would you use for the feedback collection process?
+
+**Azure App Service WebJobs**
+
+WebJobs are the only technology that permits developers to control retry policies.
+
+3. In the merged camera company, which technology would you use for the lens quality control procedure?
+
+**Azure Logic Apps**
+
+Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers.
+
+4. In the merged camera company, which technology would you use for the ordering and dispatch procedure?
+
+**Azure Logic Apps**
+
+Azure Logic Apps is the only one of the four technologies that provides a design-first approach intended for developers.
 
 ## 2. Create serverless logic with Azure Functions
 
