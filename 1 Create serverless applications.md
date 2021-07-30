@@ -29,7 +29,9 @@ Azure includes the following technologies that you can use to overcome these cha
 2. Azure Logic Apps
 3. Azure Functions
 4. Azure App Service WebJobs
-Your choice of technology depends on whether you prefer a design-first or a code-first approach, and whether you have skilled developers to work on the project.
+
+Your choice of technology depends on whether you prefer a design-first or a code-first approach, 
+and whether you have skilled developers to work on the project.
 ```
 - Choosing a design-first technology
 - Choosing a code-first technology
