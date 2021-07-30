@@ -12,11 +12,12 @@ Microsoft Azure provides several different ways to host and execute code or work
 - Common business issues
 ```
 Some business processes are simple, but often they include challenges such as:
-They might involve many different steps, sometimes with loops or conditional branches.
-They may be long-running and complete over days or weeks as staff become available or because of other delays.
-They may involve several different systems such as databases, web services, email servers, and other components.
-You may want to integrate a custom or third-party system, which may require a custom connector.
-You may want non-developers to be able to modify and update the workflow.
+
+  - They might involve many different steps, sometimes with loops or conditional branches.
+  - They may be long-running and complete over days or weeks as staff become available or because of other delays.
+  - They may involve several different systems such as databases, web services, email servers, and other components.
+  - You may want to integrate a custom or third-party system, which may require a custom connector.
+  - You may want non-developers to be able to modify and update the workflow.
 ```
 - Design-first technologies
 - Code-first technologies
@@ -47,7 +48,7 @@ Your choice of technology depends on whether you prefer a design-first or a code
 - Azure Functions or Azure Apps Service WebJobs?
 ### 1.5 Knowledge check
 - **Scenario 1 - TV Adverts**
-
+```
 You work for a company that makes TV adverts. You want to formalize two business processes:
 
 The advert review process. A completed advert is put through this editorial process to ensure that it meets the standards of taste, decency, grammar, style, and legal requirements in the jurisdiction where it will be broadcast.
@@ -57,9 +58,9 @@ The feedback collection process. A completed advert is also put through this pro
 The advert review process should be managed by members of the creative team, because it will need to change regularly. The creative team would prefer not to have to wait for a developer to become available whenever a change is needed.
 
 The feedback collection process calls an on-premises SharePoint server. Because this server is not as reliable as a cloud-based server would be, developers want to carefully control the way the workflow retries this connection, if there is a failure.
-
+```
 - **Scenario 2 - Camera Company Merger**
-
+```
 You work for a company that makes digital cameras. The company has recently acquired a smaller company that makes lenses. You want to ensure that the same procedures are in use throughout the company for the following processes:
 
 Lens quality control. The company you acquired has a good reputation for lens reliability because of its quality control procedure. You want to implement this procedure across the merged company and integrate it with your parts ordering system, which includes a REST API.
@@ -67,7 +68,7 @@ Lens quality control. The company you acquired has a good reputation for lens re
 Ordering and dispatch. The company you acquired had no formal order and dispatch procedure, so you want to ensure its employees use your original business procedure. The ordering system has a user interface that is built as an Azure App service web app but you want to manage the order and dispatch workflow as a separate project.
 
 You have hired a small team of developers to do the work and you prefer a design-first approach.
-
+```
 - **Check your Knowledge**
 
 1. In the television advert company, which technology would you use for the advert review process?
