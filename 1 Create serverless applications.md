@@ -2,9 +2,7 @@
 
 Azure Functions enable the creation of event driven, compute-on-demand systems that can be triggered by various external events. 
 
-Learn how to leverage functions to execute server-side logic and build serverless architectures.
-
-10 Modules
+Learn how to leverage functions to execute server-side logic and build serverless architectures. Total: 10 Modules
 
 ## 1. Choose the best Aure service to automate your business processes
 
