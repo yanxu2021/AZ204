@@ -192,7 +192,62 @@ The type of event that starts the function is called a trigger. You must configu
   or it can be included in an x-functions-key HTTP header.
   ```
 ## 3. Execute an Azure Function with triggers
+### 3.1 Determine the best trigger for your Azure function
+- What is a trigger? A trigger is an object that defines how an Azure Function is invoked. For example, if you want a function to execute every 10 minutes, you could use a timer trigger.Here  focus on three trigger types: timer, HTTP, and blob.
+- Types of triggers, Azure Functions support a wide range of trigger types. Here are some of the most common types:
+- What is a binding? A binding is a connection to data within your function. Bindings are optional and can be input bindings, output bindings, or both. An input binding is the data that your function receives. An output binding is the data that your function sends. Unlike a trigger, a function can have multiple input bindings and output bindings.
+### 3.2 Run an Azure Function on a schedule
+- What is a timer trigger? A timer trigger is a trigger that executes a function at a consistent interval. To create a timer trigger, you need to supply two pieces of information. 1. A Timestamp parameter name, which is simply an identifier to access the trigger in code. 2. A Schedule, which is a CRON expression that sets the interval for the timer.
+- What is a CRON expression?A CRON expression is a string that consists of six fields that represent a set of times.
 
+The order of the six fields in Azure is: {second} {minute} {hour} {day} {month} {day of the week}.
+- How to create a timer trigger: You can create a timer trigger in the Azure portal. In your Azure function app, select timer trigger from the list of trigger templates. Enter the logic that you want to execute. Supply a Timestamp parameter name and the CRON expression.
+### 3.3 Exercise - Create a timer trigger
+- Create an Azure Function App
+- Create a timer-triggered function
+- Configure the timer trigger
+- Test the timer
+### 3.4 Execute an Azure function with an HTTP request
+- What is an HTTP trigger? An HTTP trigger is a trigger that executes a function when it receives an HTTP request.
+- What is an HTTP trigger Authorization level? An HTTP trigger Authorization level is a flag that indicates whether an incoming HTTP request needs an API key for authentication.
+
+There are three Authorization levels: Function, Anonymous, Admin
+- How to create an HTTP trigger: Just like a timer trigger, you can create an HTTP trigger through the Azure portal. Inside your Azure function, select HTTP trigger from the list of predefined trigger types, then enter the logic that you want to execute and make any customizations, like restricting the use of certain HTTP verbs.
+- How to invoke an HTTP trigger? To invoke an HTTP trigger, you send an HTTP request to the URL for your function. To get this URL, go to the code page for your function and select the Get function URL link.
+### 3.5 Exercise - Create an HTTP trigger
+- Create an HTTP trigger
+- Get your function URL
+- Issue a GET request to your HTTP trigger
+### 3.6 Execute an Azure function when a blob is created
+- What is Azure Storage? Azure Storage is Microsoft's cloud storage solution that supports all types of data, including: blobs, queues, and NoSQL.
+- What is Azure Blob storage? Azure Blob storage is an object storage solution that's designed to store large amounts of unstructured data.
+- What is a blob trigger? A blob trigger is a trigger that executes a function when a file is uploaded or updated in Azure Blob storage. To create a blob trigger, you create an Azure Storage account and provide a location that the trigger monitors.
+- How to create a blob trigger? Just like the other triggers we've seen so far, you create a blob trigger in the Azure portal. Inside your Azure function, select Blob trigger from the list of predefined trigger types. Then, you enter the logic to that you want to execute when a blob is created or updated.
+### 3.7 Exercise - Create a Blob trigger
+- Create a blob trigger
+- Create a blob container
+- Turn on your blob trigger
+- Create a blob
+### 3.8 2.5 Knowledge check
+1. A CRON expression is a string that consists of six fields that represent a set of times. The order of the six fields in Azure is: {second} {minute} {hour} {day} {month} {day of the week}. Suppose you needed a CRON expression that meant "every day", what special character would you put in the {day of the week} position?
+```
+*
+An asterisk specifies that every possible value should be selected. 
+Having an asterisk in the {day of the week} field means that every day should be selected.
+```
+2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use?
+```
+samples-workitems/{name}.png
+The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. 
+Adding a file extension to the Path specifies that uploaded files must have 
+that file extension in order for the trigger to invoke the function.
+```
+3. True or false: an Azure Function can have multiple triggers associated with it?
+```
+False
+Every Azure Function must have exactly one trigger associated with it. 
+If you want to use multiple triggers, you must create multiple functions.
+```
 ## 4. Chain Azure functions together using input and output bindings
 
 ## 5. Create a long-running serverless workflow with Durable Functions
