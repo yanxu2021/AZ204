@@ -10,15 +10,6 @@ Microsoft Azure provides several different ways to host and execute code or work
 
 ### 1.1 Identify the technology options
 - Common business issues
-
-Some business processes are simple, but often they include challenges such as:
-
-    - They might involve many different steps, sometimes with loops or conditional branches.
-    - They may be long-running and complete over days or weeks as staff become available or because of other delays.
-    - They may involve several different systems such as databases, web services, email servers, and other components.
-    - You may want to integrate a custom or third-party system, which may require a custom connector.
-    - You may want non-developers to be able to modify and update the workflow.
-
 - Design-first technologies
 - Code-first technologies
 ### 1.2 Analyze the decision criteria
@@ -83,8 +74,6 @@ Some business processes are simple, but often they include challenges such as:
   but you want to manage the order and dispatch workflow as a separate project.
 
   You have hired a small team of developers to do the work and you prefer a design-first approach.
- 
-- **Check your Knowledge**
 
 1. In the television advert company, which technology would you use for the advert review process?
   ```
