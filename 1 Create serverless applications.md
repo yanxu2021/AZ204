@@ -10,20 +10,20 @@ Microsoft Azure provides several different ways to host and execute code or work
 
 ### 1.1 Identify the technology options
 - Common business issues
-  ```
-  Some business processes are simple, but often they include challenges such as:
+
+Some business processes are simple, but often they include challenges such as:
 
     - They might involve many different steps, sometimes with loops or conditional branches.
     - They may be long-running and complete over days or weeks as staff become available or because of other delays.
     - They may involve several different systems such as databases, web services, email servers, and other components.
     - You may want to integrate a custom or third-party system, which may require a custom connector.
     - You may want non-developers to be able to modify and update the workflow.
-  ```
+
 - Design-first technologies
 - Code-first technologies
 ### 1.2 Analyze the decision criteria
 - How to choose a service
-  ```
+
   Azure includes the following technologies that you can use to overcome these challenges:
   1. Microsoft Power Automate
   2. Azure Logic Apps
@@ -32,7 +32,7 @@ Microsoft Azure provides several different ways to host and execute code or work
 
   Your choice of technology depends on whether you prefer a design-first or a code-first approach, 
   and whether you have skilled developers to work on the project.
-  ```
+
 - Choosing a design-first technology
 - Choosing a code-first technology
 - Mixing Technologies
@@ -50,7 +50,7 @@ Microsoft Azure provides several different ways to host and execute code or work
 - Azure Functions or Azure Apps Service WebJobs?
 ### 1.5 Knowledge check
 - **Scenario 1 - TV Adverts**
-  ```
+
   You work for a company that makes TV adverts. You want to formalize two business processes:
 
   The advert review process. 
@@ -66,9 +66,9 @@ Microsoft Azure provides several different ways to host and execute code or work
   The feedback collection process calls an on-premises SharePoint server. 
   Because this server is not as reliable as a cloud-based server would be, 
   developers want to carefully control the way the workflow retries this connection, if there is a failure.
-  ```
+
 - **Scenario 2 - Camera Company Merger**
-  ```
+
   You work for a company that makes digital cameras. The company has recently acquired a smaller company that makes lenses. 
   You want to ensure that the same procedures are in use throughout the company for the following processes:
 
@@ -83,7 +83,7 @@ Microsoft Azure provides several different ways to host and execute code or work
   but you want to manage the order and dispatch workflow as a separate project.
 
   You have hired a small team of developers to do the work and you prefer a design-first approach.
-  ```
+ 
 - **Check your Knowledge**
 
 1. In the television advert company, which technology would you use for the advert review process?
@@ -122,17 +122,17 @@ Azure Functions allow developers to host business logic that can be executed wit
 - What is serverless compute?
 - What is Azure Functions?
 - Benefits of a serverless compute solution
-  ```
+
   Benefits of a serverless compute solution
   Stateless logic
   Event driven
   Functions can be used in traditional compute environments
-  ```
+
 -  Drawbacks of a serverless compute solution
-  ```
+
   Execution time
   Execution frequency
-  ```
+
 ### 2.2 Exercise - Create a function app in the Azure portal
 - What is a function app?
 - Create a function app
@@ -145,7 +145,7 @@ Functions are event driven, which means they run in response to an event.
 
 The type of event that starts the function is called a trigger. You must configure a function with exactly one trigger.
 - Bindings
-  ```
+
   Bindings are a declarative way to connect data and services to your function. 
   Bindings know how to talk to different services, which means you don't have to 
   write code in your function to connect to data sources and manage connections. 
@@ -155,7 +155,7 @@ The type of event that starts the function is called a trigger. You must configu
   manage the input and output data processed by the function.
 
   A trigger is a special type of input binding that has the additional capability of initiating execution.
-  ```
+
 - Create a function in the Azure portal
 - Navigate to your function and files
 - Test your Azure function
@@ -228,23 +228,23 @@ There are three Authorization levels: Function, Anonymous, Admin
 - Create a blob container
 - Turn on your blob trigger
 - Create a blob
-### 3.8 2.5 Knowledge check
+### 3.8 Knowledge check
 1. A CRON expression is a string that consists of six fields that represent a set of times. The order of the six fields in Azure is: {second} {minute} {hour} {day} {month} {day of the week}. Suppose you needed a CRON expression that meant "every day", what special character would you put in the {day of the week} position?
 ```
-*
+** * **
 An asterisk specifies that every possible value should be selected. 
 Having an asterisk in the {day of the week} field means that every day should be selected.
 ```
 2. Suppose your Azure Function has a blob trigger associated with it and you want it to execute only when png images are uploaded. Which of the following blob trigger Path values should you use?
 ```
-samples-workitems/{name}.png
+**samples-workitems/{name}.png**
 The Path tells the blob trigger where it should monitor for changes, and if there are any filters applied. 
 Adding a file extension to the Path specifies that uploaded files must have 
 that file extension in order for the trigger to invoke the function.
 ```
 3. True or false: an Azure Function can have multiple triggers associated with it?
 ```
-False
+**False**
 Every Azure Function must have exactly one trigger associated with it. 
 If you want to use multiple triggers, you must create multiple functions.
 ```
