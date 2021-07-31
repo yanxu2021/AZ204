@@ -46,3 +46,67 @@ however, the fact that the web service requires the data layer to
 handle the notification in a specific way is sufficient to make this a message.
 ```
 ## 2 Implement message-based communication workflows with Azure Service Bus
+Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
+### 2.1 Choose a messaging platform
+- Decide between messages and events
+- Service Bus topics, queues, and relays
+
+A queue is a simple temporary storage location for messages. 
+A topic is similar to a queue but can have multiple subscriptions.
+A relay is an object that performs synchronous, two-way communication between applications. Unlike queues and topics, it is not a temporary storage location for messages. Instead, it provides bidirectional, unbuffered connections across network boundaries such as firewalls.
+- Service Bus queues and storage queues, There are two Azure features that include message queues: Service Bus and Azure Storage accounts. As a general guide, storage queues are simpler to use but are less sophisticated and flexible than Service Bus queues.
+- How to choose a communications technology. Consider the following questions:
+
+Is the communication an event? If so, consider using Event Grid or Event Hubs.
+
+Should a single message be delivered to more than one destination? If so, use a Service Bus topic. Otherwise, use a queue.
+### 2.2 Exercise - Implement a Service Bus topic and queue
+- Create a Service Bus namespace
+- Create a Service Bus queue
+- Create a Service Bus topic and subscriptions
+### 2.3 Write code that uses Service Bus queues
+- Microsoft.Azure.ServiceBus NuGet package
+- Connection strings and keys
+- Call methods asynchronously
+- Write code that sends to queues
+- Receive messages from the queue
+### 2.4 Exercise - Write code that uses Service Bus queues
+- Clone and open the starter application
+- Configure a connection string to a Service Bus namespace
+- Write code that sends a message to the queue
+- Send a message to the queue
+- Write code that receives a message from the queue
+- Retrieve a message from the queue
+### 2.5 Write code that uses Service Bus topics
+- Code with topics versus code with queues
+- Set filters on subscriptions
+- TopicClient example
+### 2.6 Exercise - Write code that uses Service Bus topics
+- Write code that sends a message to the topic
+- Send a message to the topic
+- Write code that receives a message from a topic subscription
+- Retrieve a message from a topic subscription
+### 2.7 Knowledge check
+1. Which of the following queues should you use if you need first-in-first-out order and support for transactions?
+```
+**Azure Service Bus queues**
+Azure Service Bus queues handle messages in the same order they're added and also support transactions. 
+This means that if one message in a transaction fails to be added to the queue, 
+all messages in the transaction will not be added.
+```
+2. Suppose you're sending a message with Azure Service Bus and you want multiple components to receive it. Which Azure Service Bus exchange feature should you use?
+```
+**Topic**
+A topic allows multiple destination components to subscribe. 
+This means that each message can be delivered to multiple receivers.
+```
+3. True or false: You can add a message to an Azure Service Bus queue that is 2 MB in size.
+```
+**False**
+An Azure Storage queue message must be smaller than 64 KB. 
+An Azure Service Bus queue can be up to 256 KB for standard tier, and 1MB for the premium tier.
+```
+
+
+
+
